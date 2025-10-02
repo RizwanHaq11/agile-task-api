@@ -1,87 +1,90 @@
+# 🚀 Agile Task API
 
----
-
-# Agile Task API
-
-A RESTful API built with **Spring Boot** for managing tasks in an Agile workflow. The API provides endpoints for creating, retrieving, updating, and deleting tasks, making it suitable for integration with front-end applications or as a backend service in agile project management systems.
+A **RESTful API** built with **Spring Boot** for managing tasks in an Agile workflow. The API provides endpoints to create, retrieve, update, and delete tasks — perfect for integration with front-end apps or as a backend service in agile project management systems.
 
 <p align="center">
-  <img width="464" height="212" alt="e74dca17-fd73-461c-94de-e5829a6cf0ab" src="https://github.com/user-attachments/assets/d1a8d629-ef94-4cf2-b274-4535200db61f" />
+  <img width="464" height="212" alt="Agile Task API" src="https://github.com/user-attachments/assets/d1a8d629-ef94-4cf2-b274-4535200db61f" />
 </p>
 
-
-
----
-
-## Features
-
-* Create, read, update, and delete tasks
-* Task categorization by **status** (e.g., `To Do`, `In Progress`, `Done`)
-* RESTful API design following industry standards
-* Built with **Java 17** and **Spring Boot**
-* In-memory **H2 database** support for testing and development
+![GitHub repo size](https://img.shields.io/github/repo-size/RizwanHaq11/agile-task-api)  
+![GitHub last commit](https://img.shields.io/github/last-commit/RizwanHaq11/agile-task-api)  
+![GitHub issues](https://img.shields.io/github/issues/RizwanHaq11/agile-task-api)  
+![GitHub license](https://img.shields.io/github/license/RizwanHaq11/agile-task-api)  
+![Java](https://img.shields.io/badge/Java-17-blue)  
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green)  
+![H2 Database](https://img.shields.io/badge/H2-Database-orange)
 
 ---
 
-## Technologies Used
+## ✨ Features
 
-* **Java 17**
-* **Spring Boot** (Spring Web, Spring Data JPA)
-* **H2 Database** (in-memory for development)
-* **Maven** (dependency management and build tool)
+- 📌 Create, read, update, and delete tasks  
+- 📂 Categorize tasks by **status** (`TO_DO`, `IN_PROGRESS`, `DONE`)  
+- ⚡ RESTful API design following industry standards  
+- 🛠 Built with **Java 17** and **Spring Boot**  
+- 🗄 In-memory **H2 database** support for testing & development  
 
 ---
 
-## Getting Started
+## 🛠 Technologies Used
+
+- **Java 17**  
+- **Spring Boot** (Spring Web, Spring Data JPA)  
+- **H2 Database** (in-memory)  
+- **Maven** (dependency management & build tool)  
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-* Java 17 or higher
-* Maven 3.8+
-* Git
+- Java 17 or higher  
+- Maven 3.8+  
+- Git  
 
 ### Installation
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/RizwanHaq11/agile-task-api.git
-   cd agile-task-api
-   ```
+```bash
+git clone https://github.com/RizwanHaq11/agile-task-api.git
+cd agile-task-api
+```
+2. Build the project:
 
-2. Build the project with Maven:
-
-   ```bash
-   mvn clean install
-   ```
+```bash
+mvn clean install
+```
 
 3. Run the application:
 
+```bash
+mvn spring-boot:run
+```
+
+4. Access the API at:
+
    ```bash
-   mvn spring-boot:run
-   ```
-
-4. The API will be available at:
-
-   ```
    http://localhost:8080
    ```
 
+
 ---
 
-## API Endpoints
+## 📡 API Endpoints
 
 ### Task Endpoints
 
 | Method | Endpoint          | Description           |
-| ------ | ----------------- | --------------------- |
+| ------ | ----------------- | -------------------- |
 | GET    | `/api/tasks`      | Retrieve all tasks    |
-| GET    | `/api/tasks/{id}` | Retrieve a task by ID |
+| GET    | `/api/tasks/{id}` | Retrieve task by ID   |
 | POST   | `/api/tasks`      | Create a new task     |
-| PUT    | `/api/tasks/{id}` | Update a task by ID   |
-| DELETE | `/api/tasks/{id}` | Delete a task by ID   |
+| PUT    | `/api/tasks/{id}` | Update task by ID     |
+| DELETE | `/api/tasks/{id}` | Delete task by ID     |
 
-### Example Request (Create a Task)
+### Example Request: Create a Task
 
 ```http
 POST /api/tasks
@@ -94,9 +97,8 @@ Content-Type: application/json
 }
 ```
 
-### Example Response
-
-```json
+# Example Response
+```bash
 {
   "id": 1,
   "title": "Implement login",
@@ -105,26 +107,12 @@ Content-Type: application/json
 }
 ```
 
----
+# 🗄 Database
 
-## Database
+The app uses H2 Database for development.
 
-The application uses **H2 Database** for development.
-Access the H2 console at:
+## 📂 Project Structure
 
-```
-http://localhost:8080/h2-console
-```
-
-* **JDBC URL:** `jdbc:h2:mem:testdb`
-* **Username:** `sa`
-* **Password:** *(leave blank)*
-
----
-
-## Project Structure
-
-```
 src/
  └── main/
      ├── java/com/example/agiletaskapi
@@ -134,28 +122,10 @@ src/
      │   └── service      # Business logic layer
      └── resources/
          ├── application.properties
-         └── data.sql     # Sample data (if provided)
-```
+         └── data.sql     # Sample data
 
----
 
-## Contributing
+# 📞 Contact
 
-Contributions are welcome!
-Please fork the repository and submit a pull request with detailed information about your changes.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-Maintainer: **Rizwan Haq**
-GitHub: [RizwanHaq11](https://github.com/RizwanHaq11)
-
----
-
+Maintainer: Rizwan Haq
+GitHub: RizwanHaq11
